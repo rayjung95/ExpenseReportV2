@@ -4,15 +4,17 @@ using ExpenseReportV2.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Volo.Abp.EntityFrameworkCore;
 
 namespace ExpenseReportV2.Migrations
 {
     [DbContext(typeof(ExpenseReportV2DbContext))]
-    partial class ExpenseReportV2DbContextModelSnapshot : ModelSnapshot
+    [Migration("20211110032932_AddMinistryAndTeeam")]
+    partial class AddMinistryAndTeeam
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
